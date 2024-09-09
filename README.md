@@ -1,8 +1,29 @@
-# React + Vite
+# Web-Dev-Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Project_1**
 
-Currently, two official plugins are available:
+#### **Problem Statement:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You are required to design a **React-based chat interface** that mimics the look and feel of popular messaging platforms like Discord or Slack. The chat interface will only support a **single human user**, and there is **no backend** involved. The user will interact with a **bot** that performs text transformations on their input and responds with the result in the chat interface.
+
+#### **Objectives:**
+
+- Build a **simple chat interface** with React that allows users to send messages and receive responses.
+- The bot will perform various transformations on the user's input text such as:
+  - **Counting words** in the message.
+  - **Counting vowels and consonants**.
+  - **Finding the most frequent letter**.
+  - **Reversing the text**.
+  - **Jumbling the words**.
+  - **Convert text to uppercase**: The bot replies with the entire message converted to uppercase.
+  - **Convert text to lowercase**: The bot replies with the entire message converted to lowercase.
+  - **Capitalize each word**: The bot capitalizes the first letter of each word in the message.
+  - **Count the number of characters**: The bot counts and returns the total number of characters (including spaces).
+  - **Remove all vowels**: The bot removes all vowels from the message.
+  - **Remove all consonants**: The bot removes all consonants from the message.
+  - **Repeat each word twice**: The bot repeats each word in the message twice.
+  - **Replace spaces with underscores**: The bot replaces every space in the message with an underscore (`_`).
+  - **Shuffle characters in each word**: The bot shuffles the letters in each word but keeps the word order intact.
+- The user should see their message displayed in the chat window, followed by the bot’s response based on the transformation.
+
+## **How To Run The Application**
