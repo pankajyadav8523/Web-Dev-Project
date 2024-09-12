@@ -1,15 +1,61 @@
 .chatscreen {
   width: 400px;
   height: 800px;
-  border-radius: 0;
-  background-image: url("../../assets/chatImage.jpg"); /* Add your background image */
-  background-size: cover; /* Scale the image to cover the container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  color: white; /* Optional: Set text color for better contrast */
-  display: flex; /* Enable Flexbox */
-  flex-direction: column; /* Arrange children vertically */
-  justify-content: flex-end; /* Align children to the bottom */
-  padding: 10px; /* Optional: add padding to prevent content from touching edges */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px;
+  background-color: rgb(107, 211, 188);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable scroll when content overflows */
+  justify-content: flex-end; /* Align messages to the bottom */
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between messages */
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.user-message {
+  justify-content: flex-start;
+}
+
+.bot-message {
+  justify-content: flex-end;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(242, 245, 245);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.user-icon {
+  font-size: 20px;
+  color: rgb(64, 72, 151);
+}
+
+.bot-icon {
+  font-size: 20px;
+  color: rgb(237, 92, 92);
+}
+
+.message-text {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  color: black;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
