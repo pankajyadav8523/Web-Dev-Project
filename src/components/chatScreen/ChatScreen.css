@@ -1,0 +1,15 @@
+.chatscreen {
+  width: 400px;
+  height: 800px;
+  border-radius: 0;
+  background-image: url("../../assets/chatImage.jpg"); /* Add your background image */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: white; /* Optional: Set text color for better contrast */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: flex-end; /* Align children to the bottom */
+  padding: 10px; /* Optional: add padding to prevent content from touching edges */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
