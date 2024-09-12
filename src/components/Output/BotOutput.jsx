@@ -1,7 +1,11 @@
 import React from "react";
 
 const BotOutput = ({ message }) => {
-  return <div className="message-text">{message}</div>;
+  const convertLowercase = (text) => {
+    return text.toLowerCase();
+  };
+
+  return <div className="message-text">{convertLowercase(message)}</div>;
 };
 
 export default BotOutput;
