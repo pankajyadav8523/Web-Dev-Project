@@ -5,6 +5,7 @@ import ChatBox from "./components/chatBox/ChatBox";
 
 function App() {
   const [messages, setMessages] = useState([]);
+  const [inputValue, setInputValue] = useState("");
 
   const handleSetMessage = (newMessage) => {
     setMessages((prevMessages) => [
@@ -16,8 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <ChatScreen messages={messages} />
-      <ChatBox setMessage={handleSetMessage} />
+      <ChatScreen messages={messages} inputValue={inputValue} />
+      <ChatBox
+        setMessage={handleSetMessage}
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+      />
     </div>
   );
 }

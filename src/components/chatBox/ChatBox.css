@@ -1,13 +1,13 @@
 .chatbox {
-  width: 400px; /* Width of the container */
-  height: 50px; /* Height of the container */
-  border-radius: 10px; /* Rounded corners */
-  background-color: rgb(242, 245, 245); /* Background color */
-  border: 1px solid rgb(64, 72, 151); /* Border color */
-  display: flex; /* Enable Flexbox */
-  align-items: center; /* Center content vertically */
-  padding: 0 10px; /* Horizontal padding */
-  box-sizing: border-box; /* Include padding and border in width and height */
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(242, 245, 245);
+  border: 1px solid rgb(64, 72, 151);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .chatbox input {

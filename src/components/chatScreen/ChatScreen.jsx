@@ -4,7 +4,7 @@ import { FaUser, FaRobot } from "react-icons/fa";
 import BotOutput from "../Output/BotOutput";
 import UserOutput from "../Output/UserOutput";
 
-const ChatScreen = ({ messages }) => {
+const ChatScreen = ({ messages, inputValue }) => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {

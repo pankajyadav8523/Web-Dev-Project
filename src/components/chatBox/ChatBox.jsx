@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./ChatBox.css";
 
-const ChatBox = ({ setMessage }) => {
-  const [inputValue, setInputValue] = useState("");
-
+const ChatBox = ({ setMessage, inputValue, setInputValue }) => {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
