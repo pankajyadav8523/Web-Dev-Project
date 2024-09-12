@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./ChatScreen.css";
 import { FaUser, FaRobot } from "react-icons/fa";
+import BotOutput from "../Output/BotOutput";
+import UserOutput from "../Output/UserOutput";
 
 const ChatScreen = ({ messages }) => {
   const messagesEndRef = useRef(null);
@@ -26,7 +28,11 @@ const ChatScreen = ({ messages }) => {
                 <FaRobot className="bot-icon" />
               )}
             </div>
-            <div className="message-text">{message.text}</div>
+            {message.sender === "user" ? (
+              <UserOutput message={message.text} />
+            ) : (
+              <BotOutput message={message.text} />
+            )}
           </div>
         ))}
         <div ref={messagesEndRef} />
