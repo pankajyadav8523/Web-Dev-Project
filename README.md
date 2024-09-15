@@ -27,8 +27,8 @@ You are required to design a **React-based chat interface** that mimics the look
 - The user should see their message displayed in the chat window, followed by the bot’s response based on the transformation.
 
 ## **How To Run The Application**   
-Follow steps:-  
-1.Clone the repo in your local machine.   
-2.go inside the directory **Web-Dev-Project**.   
-3.install the npm depenndency by using the command **npm install or npm i**  
-4.run using the command **npm run dev**
+## Follow the below steps:-  
+1.Clone the repo in your local machine using command on your terminal **git clone https://github.com/pankajyadav8523/Web-Dev-Project.git**.   
+2.Go inside the directory **Web-Dev-Project**.   
+3.Install the npm depenndency by using the command **npm install or npm i**  
+4.Run using the command **npm run dev**
