@@ -20,7 +20,7 @@ const ChatBox = ({ setMessage, inputValue, setInputValue }) => {
         placeholder="Type your message"
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
-        value={inputValue}
+        value = {inputValue}
       />
     </div>
   );
