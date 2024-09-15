@@ -26,9 +26,9 @@ You are required to design a **React-based chat interface** that mimics the look
   - **Shuffle characters in each word**: The bot shuffles the letters in each word but keeps the word order intact.
 - The user should see their message displayed in the chat window, followed by the bot’s response based on the transformation.
 
-## **How To Run The Application** 
-Follow steps:- 
-1.Clone the repo in your local machine. 
-2.go inside the directory **Web-Dev-Project**. 
-3.install the npm depenndency by using the command **npm install or npm i** 
+## **How To Run The Application**   
+Follow steps:-  
+1.Clone the repo in your local machine.   
+2.go inside the directory **Web-Dev-Project**.   
+3.install the npm depenndency by using the command **npm install or npm i**  
 4.run using the command **npm run dev**
