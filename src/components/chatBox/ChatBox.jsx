@@ -14,18 +14,25 @@ const ChatBox = ({ setMessage, inputValue, setInputValue }) => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSendMessage();
+    }
+  };
+
   return (
     <div className="container chatbox">
       <input
         type="text"
         placeholder="Type your message"
         onChange={handleInputChange}
+        onKeyDown={handleKeyDown} // Sends message when Enter is pressed
         value={inputValue}
       />
-      {/* Send button */}
+
       <FaPaperPlane
         className="send-icon"
-        onClick={handleSendMessage} // Trigger send on click
+        onClick={handleSendMessage} // Sends message when button is clicked
       />
     </div>
   );
