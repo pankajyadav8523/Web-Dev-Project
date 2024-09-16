@@ -8,10 +8,11 @@
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;
+  position: relative; /* For positioning the send button */
 }
 
 .chatbox input {
-  width: 100%; /* Full width of the container */
+  width: 90%; /* Full width minus space for send button */
   height: 100%; /* Full height of the container */
   border: none; /* Remove default border */
   background: transparent; /* Make background transparent */
@@ -23,4 +24,13 @@
 
 .chatbox input:focus {
   outline: none; /* Remove default focus outline */
+}
+
+/* Send icon button styling */
+.send-icon {
+  font-size: 20px;
+  color: rgb(64, 72, 151); /* Adjust color as desired */
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Position it on the right */
 }
