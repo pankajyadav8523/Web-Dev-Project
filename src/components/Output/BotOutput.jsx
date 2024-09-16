@@ -1,4 +1,5 @@
 import React from "react";
+import "../chatScreen/ChatScreen.css";
 
 const transformations = {
   countWords: (text) => text.split(" ").length,
@@ -12,13 +13,15 @@ const BotOutput = ({ message, transformation }) => {
   const transformedMessage = transformations[transformation]
     ? transformations[transformation](message)
     : message;
+
   const transformationLabel = transformation
     .replace(/([A-Z])/g, " $1")
     .toUpperCase();
 
   return (
     <div className="message-text">
-      {`${transformationLabel}: ${transformedMessage}`}
+      <h4 className="transformation-heading">{transformationLabel}</h4>
+      <p className="transformed-message">{transformedMessage}</p>
     </div>
   );
 };
