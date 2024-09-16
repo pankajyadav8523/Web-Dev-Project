@@ -32,9 +32,22 @@ function App() {
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     }, 500);
   };
-
+  console.log(messages);
   return (
-    <div className="App">
+    <div className="App container-md">
+      <h1
+        style={{
+          textAlign: "center",
+          color: "#3498db",
+          backgroundColor: "#f5f5f5",
+          padding: "10px",
+          marginBottom: "0",
+          borderRadius: "10px",
+        }}
+      >
+        Chatbot
+      </h1>
+
       <ChatScreen messages={messages} />
       <ChatBox
         setMessage={handleSetMessage}

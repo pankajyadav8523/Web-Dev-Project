@@ -12,7 +12,7 @@ const ChatScreen = ({ messages }) => {
   }, [messages]);
 
   return (
-    <div className="container chatscreen shadow-none mt-5 py-5 rounded">
+    <div className="container chatscreen shadow-none rounded">
       <div className="message-container">
         {messages.map((message, index) => (
           <div
