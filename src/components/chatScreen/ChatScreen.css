@@ -14,7 +14,7 @@
 .message-container {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adds space between messages */
+  gap: 10px;
 }
 
 .message-wrapper {
@@ -52,7 +52,7 @@
 }
 
 .message-text {
-  background-color: #f8f9fa; /* Light background for bot messages */
+  background-color: #f8f9fa;
   padding: 10px 15px;
   border-radius: 10px;
   max-width: 70%;
@@ -60,17 +60,16 @@
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
-/* ChatScreen.css */
 
 .transformation-heading {
   font-weight: bold;
   font-size: 16px;
-  color: #007bff; /* Blue color for the heading */
-  margin: 0 0 5px 0; /* Slight margin below the heading */
+  color: #007bff;
+  margin: 0 0 5px 0;
 }
 
 .transformed-message {
   font-size: 14px;
   color: black;
-  margin: 0; /* No margin for message text */
+  margin: 0;
 }
