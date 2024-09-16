@@ -73,3 +73,7 @@
   color: black;
   margin: 0;
 }
+
+.chatscreen::-webkit-scrollbar {
+  display: none;
+}
