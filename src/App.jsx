@@ -19,16 +19,18 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   const handleSetMessage = (newMessage) => {
-    const botMessage = {
-      text: newMessage,
-      sender: "bot",
-      transformation: getRandomTransformation(),
-    };
     setMessages((prevMessages) => [
       ...prevMessages,
       { text: newMessage, sender: "user" },
-      botMessage,
     ]);
+    setTimeout(() => {
+      const botMessage = {
+        text: newMessage,
+        sender: "bot",
+        transformation: getRandomTransformation(),
+      };
+      setMessages((prevMessages) => [...prevMessages, botMessage]);
+    }, 500);
   };
 
   return (
