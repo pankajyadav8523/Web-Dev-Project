@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import ChatScreen from "./components/chatScreen/ChatScreen";
 import ChatBox from "./components/chatBox/ChatBox";
+import ThemeButton from "./components/ThemeButton";
 
 const getRandomTransformation = () => {
   const transformations = [
@@ -32,22 +33,13 @@ function App() {
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     }, 500);
   };
-  console.log(messages);
+
   return (
     <div className="App container-md">
-      <h1
-        style={{
-          textAlign: "center",
-          color: "#3498db",
-          backgroundColor: "#f5f5f5",
-          padding: "10px",
-          marginBottom: "0",
-          borderRadius: "10px",
-        }}
-      >
-        Chatbot
-      </h1>
-
+      <div className="header-container">
+        <h1 className="chatbot">Chatbot</h1>
+        <ThemeButton />
+      </div>
       <ChatScreen messages={messages} />
       <ChatBox
         setMessage={handleSetMessage}
