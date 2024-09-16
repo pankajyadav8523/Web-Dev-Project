@@ -1,35 +1,43 @@
-
-// import required packages
 import React, { useState } from "react";
 import "./App.css";
 import ChatScreen from "./components/chatScreen/ChatScreen";
 import ChatBox from "./components/chatBox/ChatBox";
 
-// functional app component
+const getRandomTransformation = () => {
+  const transformations = [
+    "countWords",
+    "reverseText",
+    "countCharacters",
+    "removeVowels",
+    "replaceSpaces",
+  ];
+  return transformations[Math.floor(Math.random() * transformations.length)];
+};
+
 function App() {
-
-  // State to store chat messages
   const [messages, setMessages] = useState([]);
-
-  // State to store the input value from the chat box
   const [inputValue, setInputValue] = useState("");
 
-  // Function to handle sending a message and adding it to the chat history
   const handleSetMessage = (newMessage) => {
+    const botMessage = {
+      text: newMessage,
+      sender: "bot",
+      transformation: getRandomTransformation(),
+    };
     setMessages((prevMessages) => [
       ...prevMessages,
       { text: newMessage, sender: "user" },
-      { text: newMessage, sender: "bot" },
+      botMessage,
     ]);
   };
 
   return (
     <div className="App">
-      <ChatScreen messages={messages} inputValue={inputValue} />
+      <ChatScreen messages={messages} />
       <ChatBox
-        setMessage={handleSetMessage}     // Passing the function to handle new messages
-        inputValue={inputValue}           // Passing the current input value to the ChatBox
-        setInputValue={setInputValue}     // Passing the function to update the input value
+        setMessage={handleSetMessage}
+        inputValue={inputValue}
+        setInputValue={setInputValue}
       />
     </div>
   );
