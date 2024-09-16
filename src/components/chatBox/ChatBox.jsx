@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./ChatBox.css";
+import { FaPaperPlane } from "react-icons/fa"; // Importing the send button icon
 
 const ChatBox = ({ setMessage, inputValue, setInputValue }) => {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter" && inputValue.trim() !== "") {
+  const handleSendMessage = () => {
+    if (inputValue.trim() !== "") {
       setMessage(inputValue);
       setInputValue("");
     }
@@ -19,8 +20,12 @@ const ChatBox = ({ setMessage, inputValue, setInputValue }) => {
         type="text"
         placeholder="Type your message"
         onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
         value={inputValue}
+      />
+      {/* Send button */}
+      <FaPaperPlane
+        className="send-icon"
+        onClick={handleSendMessage} // Trigger send on click
       />
     </div>
   );
