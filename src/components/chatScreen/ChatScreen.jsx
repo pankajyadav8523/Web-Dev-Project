@@ -4,15 +4,20 @@ import { FaUser, FaRobot } from "react-icons/fa";
 import BotOutput from "../Output/BotOutput";
 import UserOutput from "../Output/UserOutput";
 
-const ChatScreen = ({ messages, inputValue }) => {
+const ChatScreen = ({ messages }) => {
   const messagesEndRef = useRef(null);
+  const chatContainerRef = useRef(null);
 
   useEffect(() => {
+    // Always scroll to the bottom when a new message is added
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages]); // Trigger effect on every message addition
 
   return (
-    <div className="container chatscreen shadow-none p-5 rounded mt-5">
+    <div
+      className="container chatscreen shadow-none p-5 rounded mt-5"
+      ref={chatContainerRef}
+    >
       <div className="message-container">
         {messages.map((message, index) => (
           <div

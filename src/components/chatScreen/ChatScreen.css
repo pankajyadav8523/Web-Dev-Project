@@ -1,14 +1,14 @@
 .chatscreen {
   width: 400px;
-  height: 800px;
+  height: 800px; /* Fixed height to allow scrolling */
   border-radius: 10px;
   background-color: rgb(107, 211, 188);
   padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Enable scroll when content overflows */
-  justify-content: flex-end; /* Align messages to the bottom */
+  overflow-y: auto; /* Enable scrolling */
+  justify-content: flex-start;
 }
 
 .message-container {
