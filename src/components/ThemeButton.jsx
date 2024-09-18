@@ -24,7 +24,7 @@ export default function ThemeButton() {
 
   return (
     <button onClick={handleClick} className="theme-button">
-      {currentTheme === "light" ? <FaMoon size={20} /> : <FaSun size={20} />}
+      {currentTheme === "light" ? <FaMoon size={25} /> : <FaSun size={25} />}
     </button>
   );
 }
