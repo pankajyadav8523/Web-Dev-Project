@@ -8,29 +8,28 @@
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;
-  position: relative; /* For positioning the send button */
+  position: relative;
 }
 
 .chatbox input {
-  width: 90%; /* Full width minus space for send button */
-  height: 100%; /* Full height of the container */
-  border: none; /* Remove default border */
-  background: transparent; /* Make background transparent */
-  padding: 0; /* Remove default padding */
-  box-sizing: border-box; /* Include padding in width and height */
-  font-size: 16px; /* Adjust font size */
-  color: rgb(0, 0, 0); /* Text color */
+  width: 90%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
 }
 
 .chatbox input:focus {
-  outline: none; /* Remove default focus outline */
+  outline: none;
 }
 
-/* Send icon button styling */
 .send-icon {
   font-size: 20px;
-  color: rgb(64, 72, 151); /* Adjust color as desired */
+  color: rgb(64, 72, 151);
   cursor: pointer;
   position: absolute;
-  right: 10px; /* Position it on the right */
+  right: 10px;
 }
