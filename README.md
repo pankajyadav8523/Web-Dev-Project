@@ -6,17 +6,17 @@
 
 # Web-Dev-Project
 
-This project features a chatbot that mimics human-like interaction while providing the following functionalities:
+This project features a chatbot that mimics the look and feel of popular messaging platforms like Discord or Slack while providing the following functionalities:
 
-## Word Count: Counts the number of words in a message.
+**Word Count**: Counts the number of words in a message.
 
-## Reverse Text: Reverses the content of the message.
+**Reverse Text**: Reverses the content of the message.
 
-## Character Count: Counts the total number of characters in a message.
+**Character Count**: Counts the total number of characters in a message.
 
-## Vowel Removal: Removes all vowels from the message.
+**Vowel Removal**: Removes all vowels from the message.
 
-## Space Replacement: Replaces spaces with underscores in the message.
+**Space Replacement**: Replaces spaces with underscores in the message.
 
 ## **How To Run The Application**
 
