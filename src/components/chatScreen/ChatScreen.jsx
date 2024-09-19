@@ -38,7 +38,7 @@ const ChatScreen = ({ messages }) => {
             )}
           </div>
         ))}
-        <div ref={messagesEndRef} />
+        <div ref = {messagesEndRef} />
       </div>
     </div>
   );
