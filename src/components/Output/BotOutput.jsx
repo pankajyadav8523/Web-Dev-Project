@@ -1,13 +1,17 @@
 import React from "react";
 import "../chatScreen/ChatScreen.css";
 
+
+// Arrow Function defined for required Transformation
 const countWords = (text) => {
   text = text.trim();
   let count = 0;
   if (text.length === 0) {
     return count;
   }
-  for (let i = 1; i < text.length; i++) {
+
+  let len = text.length;
+  for (let i = 1; i < len; i++) {
     if (text[i - 1] === " " && text[i] !== " ") {
       count += 1;
     }
