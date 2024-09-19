@@ -22,7 +22,8 @@ This project features a chatbot that mimics the look and feel of popular messagi
 
 ## Follow the below steps:-
 
-1.Clone the repo in your local machine using command on your terminal git clone https://github.com/pankajyadav8523/Web-Dev-Project.git  
+1.Clone the repo in your local machine using command on your terminal 
+**git clone https://github.com/pankajyadav8523/Web-Dev-Project.git**
 2.Go inside the directory **Web-Dev-Project**.  
 3.Install the npm depenndency by using the command **npm install or npm i**  
 4.Run using the command **npm run dev**
