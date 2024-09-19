@@ -1,7 +1,6 @@
 import React from "react";
 import "../chatScreen/ChatScreen.css";
 
-
 // Arrow Function defined for required Transformation
 const countWords = (text) => {
   text = text.trim();
@@ -28,12 +27,39 @@ const reverseText = (text) => {
   return result;
 };
 
+const removeVowels = (text) => {
+  text = text.trim();
+  let str = "AEIOUaeiou";
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] in str) {
+      continue;
+    } else {
+      result += text[i];
+    }
+  }
+  return result;
+};
+
+const replaceSpaces = (text) => {
+  text = text.trim();
+  let str = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] == " ") {
+      str += "_";
+    } else {
+      str += text[i];
+    }
+  }
+  return str;
+};
+
 const transformations = {
   countWords: (text) => countWords(text),
   reverseText: (text) => reverseText(text),
   countCharacters: (text) => text.length,
-  removeVowels: (text) => text.replace(/[aeiouAEIOU]/g, ""),
-  replaceSpaces: (text) => text.replace(/\s+/g, "_"),
+  removeVowels: (text) => removeVowels(text),
+  replaceSpaces: (text) => replaceSpaces(text),
 };
 
 const BotOutput = ({ message, transformation }) => {
