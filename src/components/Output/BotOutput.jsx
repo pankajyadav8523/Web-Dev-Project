@@ -32,7 +32,7 @@ const removeVowels = (text) => {
   let str = "AEIOUaeiou";
   let result = "";
   for (let i = 0; i < text.length; i++) {
-    if (text[i] in str) {
+    if (str.includes(text[i])) {
       continue;
     } else {
       result += text[i];
